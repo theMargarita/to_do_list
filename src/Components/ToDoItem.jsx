@@ -9,13 +9,13 @@ function ToDoItem({ tasks, deleteTask, completeTask }) {
         checked={tasks.completed}
         onChange={() => completeTask(tasks.id)}
       />
-      <ul>
-        <span className={tasks.completed ? "completed" : ""}>{tasks.text}</span>
-        <button className="complete-btn" onClick={() => completeTask(tasks.id)}>✔</button>
-        <button className="delete-btn" onClick={() => deleteTask(tasks.id)}>
-          X
-        </button>
-      </ul>
+      <span className={tasks.completed ? "completed" : ""}>{tasks.text}</span>
+      <button className="complete-btn" onClick={() => completeTask(tasks.id)}>
+        ✔
+      </button>
+      <button className="delete-btn" onClick={() => deleteTask(tasks.id)}>
+        X
+      </button>
     </div>
   );
 }

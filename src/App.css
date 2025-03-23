@@ -1,8 +1,48 @@
-/* #root{
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-} */
+#root {
+  margin: 50px auto;
+  max-width: 400px;
+  min-height: 400px;
+}
+body {
+  background-image: url("/src/assets/m.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+  color: aliceblue;
+  text-decoration: underline;
+  margin: 40px;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: -50px;
+  margin-right: -50px;
+  backdrop-filter: blur(10px);
+  background: rgba(2, 13, 14, 0.432);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+input.todo-input {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(224, 238, 250);
+  width: 80%;
+  max-width: 500px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
 
 .todo-input {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -11,37 +51,61 @@
   margin-top: 20px;
 }
 
-.delete-btn{
+.add-btn {
   border-radius: 5px;
-border: none;
-background-color: rgb(187, 36, 36);
-cursor: pointer;
+  border: none;
+  padding: 5px;
+  background-color: rgb(98, 158, 197);
+  color: white;
+  position: relative;
+  width: 200px;
+}
+
+.delete-btn {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(167, 53, 53);
+  cursor: pointer;
+  position: absolute;
+  bottom: 11px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-right: 6px;
+  padding-left: 6px;
+  max-width: fit-content;
 }
 .complete-btn {
   border-radius: 5px;
   border: none;
   background-color: aquamarine;
   cursor: pointer;
-}
-ul {
-  padding: 1.5rem;
-  background-color: rgb(236, 168, 85);
+  position: absolute;
+  top: 11px;
 }
 
-.todo-item{
-  background-color: white;
+.todo-item {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  margin-block: 30px;
+
+  /* max-width: 400px;
+  max-height: 600px; */
+
+
 }
+
+span {
+  padding: 30px;
+}
+
+/* input {
+  left: 10px;
+} */
 
 .completed {
   text-decoration: line-through; /* adds strikethrough */
-  color: gray; 
+  color: rgb(32, 30, 30);
 }
-
-form{
-  border-style: double;
-}
-
-ul{
-  border-style: double;
-}
-

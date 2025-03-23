@@ -62,7 +62,7 @@ function ToDoList() {
       />
 
       <div>
-        <ul>
+
           {tasks.map((task) => (
             <ToDoItem
               key={task.id}
@@ -71,7 +71,7 @@ function ToDoList() {
               completeTask={completeTask}
             />
           ))}
-        </ul>
+
       </div>
     </div>
   );
