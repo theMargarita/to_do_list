@@ -55,7 +55,6 @@ function ToDoList() {
       <h1>TO DO LIST</h1>
 
       <ToDoInput
-        onSubmit={addTask}
         inputText={inputText}
         handleInputChange={handleInputChange}
         addTask={addTask}
